@@ -8,4 +8,4 @@ Para rodar o programa basta rodar a função passando os bytes do arquivo mem:
 ```resultados, _ := neander.RunProgram(bytes, false, true)```
 
 Para imprimir o programa original, use a função passando os bytes do arquivo mem:
-```resultados, _ := neander.PrintProgram(bytes, false, false)```
+```neander.PrintProgram(bytes, false, false)```
