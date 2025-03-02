@@ -1,3 +1,5 @@
 # Run program
 
-#### O outputa estará no ultimo byte(255), para rodar `go build && ./neanderVM program.mem;`
+O output estará no último byte(o 255º byte). Para rodar o programa, basta fazer a build e passar o arquivo como primeiro argumento. 
+Execute na raiz do projeto:
+```go build && ./neanderVM program.mem;```
