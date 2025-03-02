@@ -65,7 +65,7 @@ func RunProgram(program []byte, hexa, printFinalState bool) (Result, []byte) {
 			break
 		case JN:
 			result.Pc = addr
-			if result.Ac != 0 {
+			if result.Ac < 0 {
 				i = addrValueIndex - padding
 			}
 			continue
