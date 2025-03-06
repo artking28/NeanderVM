@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 	"log"
-	// "fmt"
+	"fmt"
 	"neanderVM/neander"
 )
 
@@ -20,6 +20,6 @@ func main() {
 	}
 	neander.PrintProgram(bytes, false, false)
 
-	// pr, _ := neander.RunProgram(bytes, false, true)
-	// fmt.Printf("\nResult:\n\tAc = %x, Pc = %x, Z = %v, N = %v\n", pr.Ac, pr.Pc, pr.Ac == 0, int8(pr.Ac) < 0)
+	pr, _ := neander.RunProgram(bytes, false, true)
+	fmt.Printf("\n\nResult:\n\tAc = %x, Pc = %x, Z = %v, N = %v\n\n", pr.Ac, pr.Pc, pr.Ac == 0, int8(pr.Ac) < 0)
 }
